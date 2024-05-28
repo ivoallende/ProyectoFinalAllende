@@ -1,0 +1,1251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+
+header {
+  background-image: linear-gradient(black, rgb(0, 99, 0));
+  width: 100%;
+}
+header nav div .imgtiempo {
+  width: 100px;
+  height: 100px;
+  background-image: url(../galeria/3ertiempo1.jpg);
+  background-size: contain;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+}
+header nav div button i {
+  color: white;
+  font-size: 35px;
+}
+header nav div div {
+  display: flex !important;
+  justify-content: center !important;
+}
+header nav div div ul li a {
+  text-decoration: none;
+  color: white !important;
+  font-size: 30px;
+}
+
+main .fondomain {
+  background-image: url(../galeria/fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 140px);
+  width: 100%;
+}
+main .fondomain .dentromain {
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: 100px;
+  position: absolute;
+  width: 430px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+main .fondomain .dentromain h1 {
+  font-size: 35px;
+  width: auto;
+  color: white;
+  text-shadow: 0 0 7px white;
+  padding: none;
+  margin-top: 20px;
+  text-align: center;
+}
+main .fondomain .dentromain p {
+  font-size: 20px;
+  width: auto;
+  color: white;
+  text-shadow: 0 0 5px white;
+  padding: 20px;
+}
+main .fondomain .dentromain a {
+  font-size: 25px;
+  width: auto;
+  color: green;
+  text-shadow: 0 0 2px green;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+main .fondomain .dentromain a:hover {
+  color: greenyellow;
+  background-color: rgb(14, 110, 14);
+  transition: 1s;
+}
+main .subtitulo .aches {
+  text-align: center;
+  font-size: 35px;
+  width: auto;
+  color: green;
+  text-shadow: 0 0 5px green;
+  padding: 20px;
+  transition: all 0.7s;
+}
+main .subtitulo .aches:hover {
+  color: black;
+  transform: scale(1.1);
+}
+main .subtitulo span {
+  color: black;
+}
+main .subtitulo p {
+  font-size: 20px;
+  width: auto;
+  color: black;
+  text-shadow: 0 0 2px black;
+  padding: 5px;
+}
+main .wsps {
+  width: 100%;
+  padding: 30px 0px;
+  animation-name: movimiento;
+  animation-duration: 8s;
+  animation-iteration-count: unset;
+}
+@keyframes movimiento {
+  0% {
+    border-radius: 0%;
+    opacity: 0;
+  }
+  30% {
+    border-radius: 30px;
+    transform: translateX(300px);
+    background-color: white;
+    opacity: 1;
+  }
+  60% {
+    border-radius: 75px;
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+main .wsps a {
+  font-size: 25px;
+  width: auto;
+  color: black;
+  text-shadow: 0 0 5px black;
+  padding: 20px 20px;
+  background-color: green;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 5px black;
+  transition: all 1.5s !important;
+}
+main .wsps a:hover {
+  filter: grayscale(80%);
+  color: black;
+  transform: rotate(360deg);
+}
+main .canchas {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .canchas .lfoto, main .canchas .rfoto {
+  transition: all 1.2s;
+}
+main .canchas .lfoto:hover, main .canchas .rfoto:hover {
+  transform: scale(1.03);
+}
+main .subir {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 5ps black;
+}
+
+footer {
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  text-shadow: 0 0 2px white;
+  padding: 5px;
+  background-color: rgb(77, 194, 31);
+  display: flex;
+}
+footer .redes {
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+}
+footer .redes a {
+  font-size: 20px;
+  width: auto;
+  color: black;
+  text-shadow: 0 0 2px black;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 1s !important;
+  flex-direction: column;
+}
+footer .redes a:hover {
+  transform: scale(1.05);
+}
+footer .redes .derechos {
+  text-align: center;
+  width: 25%;
+  margin: 20px 20px;
+}
+
+.reservamain {
+  height: calc(90vh - 50px);
+  background-image: url(../galeria/galaxia1.jpg);
+  background-size: cover;
+}
+.reservamain .contactos {
+  width: 100%;
+  height: 500px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+.reservamain .contactos .contacto {
+  width: auto;
+  height: auto;
+  padding: 50px;
+  font-size: 30px;
+  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px yellowgreen;
+}
+.reservamain .contactos .contacto .contactoh3 {
+  color: white;
+  font-size: 40px;
+}
+.reservamain .contactos .contacto p {
+  padding: 15px;
+}
+.reservamain .contactos .contacto a {
+  text-decoration: none;
+  color: white;
+}
+.reservamain .contactos .form {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px yellowgreen;
+  text-align: center;
+}
+.reservamain .contactos .form .contactoh3 {
+  color: white;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.reservamain .contactos .form input {
+  padding: 20px 40px;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  box-shadow: 0 0 5px rgb(74, 214, 74);
+  transition: all 1.2s;
+}
+.reservamain .contactos .form input:hover {
+  background-color: black;
+  color: white;
+}
+.reservamain .contactos .form .boton {
+  padding: 20px 35px;
+  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px yellowgreen;
+}
+
+.footereserva {
+  background-color: black;
+  color: white;
+}
+.footereserva div a {
+  color: white;
+}
+
+.mainnosotros {
+  text-align: center;
+  background-color: to bottom green blue red;
+}
+.mainnosotros .losotros {
+  background-image: url(../galeria/ivanto.jpeg);
+  background-position: center;
+  height: calc(100vh - 120px);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+.mainnosotros .losotros img {
+  display: none;
+}
+.mainnosotros .losotros h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 15px black;
+  padding-top: 180px;
+}
+.mainnosotros .losotros p {
+  font-size: 20px;
+  padding-top: 10px;
+  color: white !important;
+  text-shadow: 0 0 15px white !important;
+  margin: 15px;
+}
+.mainnosotros .informacion {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  border-radius: 50px;
+}
+.mainnosotros .informacion h2 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px white;
+  padding: 30px;
+}
+.mainnosotros .informacion p {
+  color: white;
+  font-size: 30px;
+  padding: 30px;
+  text-shadow: 0 0 5px white;
+}
+
+.nosotro {
+  background-image: linear-gradient(to bottom, #954949, #333636, #48281B, #3095B1, #242223);
+}
+.nosotro .headernos {
+  background-color: white;
+}
+
+.footernos {
+  background-color: rgba(36, 34, 35, 0.0078431373);
+}
+
+.fun {
+  text-align: center;
+}
+.fun .funcional-1 {
+  color: black;
+  height: 300px;
+  background-color: #eb6ceb;
+}
+.fun .funcional-1 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-1 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-2 {
+  color: black;
+  height: 300px;
+  background-color: #e855e8;
+}
+.fun .funcional-2 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-2 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-3 {
+  color: black;
+  height: 300px;
+  background-color: #e53fe5;
+}
+.fun .funcional-3 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-3 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-4 {
+  color: black;
+  height: 300px;
+  background-color: #e228e2;
+}
+.fun .funcional-4 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-4 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-5 {
+  color: black;
+  height: 300px;
+  background-color: #d41dd4;
+}
+.fun .funcional-5 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-5 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-6 {
+  color: black;
+  height: 300px;
+  background-color: #bd1abd;
+}
+.fun .funcional-6 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-6 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.fun .funcional-7 {
+  color: black;
+  height: 300px;
+  background-color: #a717a7;
+}
+.fun .funcional-7 .h1 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h5 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h6 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 .h7 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.fun .funcional-7 p {
+  background-color: #aa005e;
+  margin: 35px 100px;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.fun {
+  text-shadow: 3px 3px 3px #242223;
+  width: 100%;
+}
+.fun div h1, .fun div h2, .fun div h3, .fun div h4, .fun div h5, .fun div h6 {
+  font-size: 40px;
+  width: auto;
+  color: black;
+  text-shadow: 0 0 5px black;
+  padding: 20px;
+  text-align: center;
+}
+.fun div p {
+  color: white;
+}
+.fun .funcional-5 {
+  width: 100% !important;
+  height: auto;
+}
+.fun .funcional-5 section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.fun .funcional-5 section .material1 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material2 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material3 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material4 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material5 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material6 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material7 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material8 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material9 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 section .material10 {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 20px;
+  background-image: url("../galeria/material10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fun .funcional-5 .h5grid {
+  font-size: 30px;
+  padding-top: 50px;
+}
+.fun .funcional-5 .material1 {
+  animation-name: rebotar;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: cover;
+}
+.fun .funcional-5 .material3 {
+  animation-name: rebotar;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+  11% {
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+  31% {
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(50px);
+    box-shadow: none;
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(130px);
+    box-shadow: none;
+    transform: rotate(-280deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+    transform: translate(10px, 150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+.fun .funcional-7 h6 {
+  color: white;
+  margin: 0px;
+  padding-top: 50px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px #000;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-name: rebotar;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.maincanchas {
+  background-color: black;
+}
+.maincanchas h1, .maincanchas h2, .maincanchas h3, .maincanchas h4 {
+  font-size: 40px;
+  width: auto;
+  color: green;
+  text-shadow: 0 0 5px green;
+  padding: 20px;
+  text-align: center;
+}
+.maincanchas section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+.maincanchas section .ftcancha {
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 4px 5px black, 6px 7px #333636, 10px 11px #242223;
+}
+.maincanchas section .cancha1 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha2 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha3 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha4 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha5 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha6 {
+  background-image: url(../galeria/cancha1.jpeg);
+}
+.maincanchas section .cancha8 {
+  background-image: url(../galeria/cancha8.jpeg);
+}
+.maincanchas section .cancha9 {
+  background-image: url(../galeria/cancha9.jpeg);
+}
+.maincanchas section .cancha10 {
+  background-image: url(../galeria/cancha10.jpeg);
+}
+.maincanchas section .cancha11 {
+  background-image: url(../galeria/cancha11.jpeg);
+}
+.maincanchas section .cancha12 {
+  background-image: url(../galeria/cancha12.jpeg);
+}
+.maincanchas section .cancha13 {
+  background-image: url(../galeria/cancha13.jpg);
+}
+.maincanchas section .cancha14 {
+  background-image: url(../galeria/cancha14.jpg);
+}
+.maincanchas section .cancha15 {
+  background-image: url(../galeria/cancha15.png);
+}
+.maincanchas section .cancha16 {
+  background-image: url(../galeria/cancha16.jpg);
+}
+.maincanchas section .cancha17 {
+  background-image: url(../galeria/cancha17.jpg);
+}
+.maincanchas section .cancha18 {
+  background-image: url(../galeria/cancha18.jpg);
+}
+
+.footercanchas {
+  background-color: black;
+}
+.footercanchas .redes a {
+  color: white;
+}
+
+@media (min-width: 1440px) {
+  header ul li {
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  header ul li {
+    padding: 0px 30px;
+  }
+  main .wsps {
+    width: 100%;
+  }
+  main .imagenesindex {
+    width: 100%;
+  }
+  main .imagenesindex .lfoto, main .imagenesindex .rfoto {
+    width: 85%;
+    display: inline-flex;
+    margin-left: 55px;
+    margin-top: 50px;
+  }
+  main .canchas {
+    width: 100%;
+    padding: 0px;
+  }
+  .footerindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.mainnosotros .losotros .ivanto {
+  width: 600px;
+}
+
+.footernos .redes a {
+  display: flex;
+  font-family: "PT Serif", serif;
+}
+
+@media (max-width: 768px) {
+  header nav .nave {
+    display: block !important;
+    text-align: center !important;
+    font-size: 20px;
+  }
+  header nav .nave a {
+    justify-content: center;
+  }
+  main .canchas {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .canchas img {
+    padding: none;
+    margin: 20px;
+    width: 80vh;
+  }
+}
+.reservamain {
+  width: 100%;
+  height: 1200px;
+}
+.reservamain .contactos .contacto {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.reservamain .contactos .form input {
+  font-size: 20px;
+}
+
+.maincanchas h1, .maincanchas h2, .maincanchas h3, .maincanchas h4 {
+  font-size: 30px;
+}
+
+footer {
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+}
+footer .redes {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .arriba {
+    display: block !important;
+  }
+  main .fondomain .dentromain {
+    width: 300px;
+    border: 5px solid black;
+  }
+  main .fondomain .dentromain h1 {
+    color: black;
+  }
+  main .fondomain .dentromain p {
+    color: black;
+  }
+  main .wsps {
+    display: inline-block;
+    margin: 10px;
+    width: 90%;
+  }
+  main .wsps a {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  main .imagenesindex {
+    width: 100%;
+    justify-content: center;
+  }
+  main .imagenesindex img {
+    width: 350px;
+  }
+  main .imagenesindex .rfoto {
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  main .imagenesindex .lfoto {
+    margin: 5;
+    margin-bottom: 10px;
+  }
+  .mainnosotros .losotros {
+    margin: 0px;
+    height: auto;
+    padding: 0px;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    border-radius: 50px;
+  }
+  .mainnosotros .losotros h1 {
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .mainnosotros .losotros p {
+    font-size: 20px;
+    margin: 10px 50px 50px 50px;
+    text-shadow: 0 0 3px white !important;
+  }
+  .mainnosotros .losotros img {
+    display: inline;
+    width: 80%;
+    margin-top: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+  }
+  .mainnosotros .informacion h2 {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+  .mainnosotros .informacion p {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .footernos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footernos p {
+    margin: 40px;
+  }
+  .footernos .redes .red {
+    margin: 20px;
+  }
+  .reservamain {
+    height: 1300px;
+  }
+  .reservamain .contactos .form {
+    width: 90%;
+  }
+  .footereserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footereserva p {
+    margin: 30px;
+  }
+  .footereserva .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .maincanchas h1, .maincanchas h2, .maincanchas h3, .maincanchas h4 {
+    font-size: 25px;
+  }
+  .maincanchas section .cancha7 video {
+    width: auto;
+  }
+  .fun div {
+    width: auto;
+    height: auto !important;
+    padding: 10px;
+  }
+  .fun .funcional-5 div {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  main .fondomain .dentromain {
+    width: 250px;
+    margin: 15px;
+  }
+  main .canchas {
+    justify-content: center;
+    margin: 0px;
+  }
+  main .canchas img {
+    width: 250px;
+    height: auto;
+  }
+  main .wsps {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  main .wsps a {
+    margin: 10px;
+  }
+  footer .redes p {
+    font-size: 20px;
+  }
+  footer .redes a {
+    font-size: 15px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 5px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .reservamain {
+    height: 1300px;
+  }
+  .reservamain .contactos .contacto {
+    font-size: 20px;
+  }
+  .reservamain .contactos .contacto p {
+    margin: 5px;
+  }
+  .reservamain .contactos .form {
+    width: 80%;
+  }
+  .reservamain .contactos .form input {
+    width: 200px;
+  }
+  .maincanchas h1, .maincanchas h2, .maincanchas h3, .maincanchas h4 {
+    font-size: 25px;
+  }
+  .fun div p {
+    margin: 0px !important;
+  }
+  .fun .funcional-7 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .fun .funcional-7 h6 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 320px) {
+  main .fondomain .dentromain {
+    width: 250px;
+    margin: 15px;
+  }
+  main .canchas {
+    justify-content: center;
+    margin: 0px;
+  }
+  main .canchas img {
+    width: 250px;
+    height: auto;
+  }
+  main .wsps {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  main .wsps a {
+    margin: 10px;
+  }
+  footer .redes p {
+    font-size: 20px;
+  }
+  footer .redes a {
+    font-size: 15px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 5px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .reservamain {
+    height: 1300px;
+  }
+  .reservamain .contactos .contacto {
+    font-size: 20px;
+  }
+  .reservamain .contactos .contacto p {
+    margin: 5px;
+  }
+  .reservamain .contactos .form {
+    width: 80%;
+  }
+  .reservamain .contactos .form input {
+    width: 200px;
+  }
+  .maincanchas h1, .maincanchas h2, .maincanchas h3, .maincanchas h4 {
+    font-size: 25px;
+  }
+  .fun div p {
+    margin: 0px !important;
+  }
+  .fun .funcional-7 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .fun .funcional-7 h6 {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,7 @@
+Estube aplicando lo que es meta keywords , meta description, title en el head para 
+cada una de las paginas
+esta bien aplicado el uso de header , main y footer 
+bien aplicado los h1 h2 h3 h4 h5 h6 y mas que esos no utilice 
+utilice imagenes y animaciones 
+la pagina va de desktop a mobile
+las etiquetas hijos estan bien anidadas 

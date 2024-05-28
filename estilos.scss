@@ -1,0 +1,1100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin cuatrotipos ($height , $width, $bgcolor, $color){
+    height:$heigh;
+    width:$width;
+    background-color: $bgcolor;
+    color: $color;
+}
+@mixin texto($tamanio, $width, $color,$shadow,$padding){
+    font-size: $tamanio;
+    width: $width;
+    color: $color;
+    text-shadow: $shadow;
+    padding: $padding;
+    }
+$fuente-general:"PT Serif", serif;
+$color-general:white;
+body{
+    font-family: $fuente-general;
+}
+header{
+    background-image: linear-gradient(black , rgb(0, 99 , 0));
+    width: 100%;
+    nav{
+        
+        div{
+            .imgtiempo{
+                width: 100px;
+                height:100px;
+                background-image: url(./galeria/3ertiempo1.jpg);
+                background-size: contain;
+                border-radius: 100%;
+                background-repeat: no-repeat;
+            }
+            button{
+                i{
+                    color: white;
+                    font-size: 35px;
+                }
+            }
+        div{
+            display: flex !important;
+                justify-content: center !important;
+            ul{    
+                
+                li{
+
+                    a{
+                        text-decoration: none;
+                        color: white !important;
+                        font-size: 30px
+                    }
+                }
+            }
+        }
+        }
+        }
+        }
+main{
+    .fondomain{
+        background-image: url(./galeria/fondo1.jpg);
+        background-position: center;
+        background-size: cover;
+        height:calc(100vh - 140px);
+        width: 100%;
+        .dentromain{
+            border: 5px solid white;
+            border-radius: 10px;
+            margin-left: 60px;
+            margin-top: 100px;
+            position: absolute;
+            width: 430px;
+            padding-bottom: 25px;
+            text-align: center;
+        
+            h1{
+                @include texto(35px, auto , $color-general , 0 0 7px white, none);
+                margin-top: 20px;
+                text-align: center;
+            }
+            p{
+                @include texto(20px, auto,white ,0 0 5px white, 20px);
+            }
+            a{
+                @include texto(25px, auto,green,0 0 2px green, 10px 25px);
+                text-decoration: none;
+                background-color: greenyellow;
+                border-radius: 10px;
+            }
+            a:hover{
+                color: greenyellow;
+                background-color:rgb(14, 110, 14) ;
+                transition: 1s;
+            }
+        }
+    }
+    .subtitulo{
+        .aches{
+            text-align: center;
+            @include texto(35px,auto ,green ,0 0 5px green ,20px);
+            transition: all 0.7s;   
+        }
+        .aches:hover{
+            color: black;
+            transform: scale(1.1);
+        }
+        span{
+            color: black;
+        }
+        p{
+            @include texto(20px,auto,black,0 0 2px black,5px);
+        }
+    }
+    .wsps{
+        width: 100%;
+        padding: 30px 0px;
+        animation-name: movimiento;
+        animation-duration: 8s;
+        animation-iteration-count: unset;
+        @keyframes movimiento {
+            0%{
+                border-radius: 0%;
+                opacity: 0;
+            }
+            30%{
+                border-radius: 30px;
+                transform: translateX(300px);
+                background-color: white;
+                opacity: 1;
+            }
+            60%{
+                border-radius: 75px;
+                transform: translateX(-200px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+        a{
+            @include texto(25px,auto ,black ,0 0 5px black,20px 20px);
+            background-color: green;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 5px 5px 5px 5px black;
+            transition: all 1.5s !important;
+        }  
+        a:hover{        
+        filter: grayscale(80%);
+        color: black;
+        transform: rotate(360deg);
+        }
+    }
+    .canchas{
+        width: 100%;
+        margin-bottom: 20px;
+        .lfoto , .rfoto{
+            transition: all 1.2s;
+        }
+        .lfoto:hover , .rfoto:hover{
+            transform: scale(1.03);
+        }
+    }
+    .subir{
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        color:white;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        border-radius: 50%;
+        box-shadow: 0 0 5ps black;
+    }
+    
+}
+footer{
+    @include texto(20px,100% ,white ,0 0 2px white ,5px);
+    background-color: rgb(77, 194, 31);
+    display: flex;
+    .redes{
+        width:50%;
+        font-size: 25px;
+        text-align: center;
+        a{
+            @include texto(20px,auto ,black ,0 0 2px black ,5px );
+            text-decoration: none;
+            transition: all 1s !important;
+            flex-direction: column;
+            
+        }
+        a:hover{
+            transform: scale(1.05);
+        }
+        .derechos{
+            text-align: center;
+            width: 25%;
+            margin:20px 20px;
+        }
+    }
+
+
+}
+
+// pagina de reserva
+
+.reservamain{
+    height:calc(90vh - 50px);
+    background-image: url(./galeria/galaxia1.jpg);
+    background-size: cover;
+    .contactos{
+        width: 100%;
+        height: 500px;
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        
+        .contacto{
+            width: auto;
+            height: auto;
+            padding: 50px;
+            font-size: 30px;
+            box-shadow: 0 0 5px white;
+            box-shadow: 0 0 10px yellowgreen;
+            .contactoh3{
+                color: white;
+                font-size: 40px;
+                
+            }
+            p{
+                padding: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            } 
+            
+        }
+        .form{
+            width:50%;
+            height: auto;
+            box-shadow: 0 0 5px white;
+            box-shadow: 0 0 10px yellowgreen;
+            text-align: center;
+            .contactoh3{
+                color: white;
+                font-size: 40px;
+                margin-top: 10px;
+            }
+            input{
+                padding: 20px 40px;
+                font-size: 20px;
+                margin: 20px;
+                border-radius: 10px;
+                background-color: gray;
+                box-shadow: 0 0 5px rgb(74, 214, 74);
+                transition: all 1.2s;
+            }
+            input:hover{
+                background-color: black;
+                color: white;
+            }
+            .boton{
+                padding: 20px 35px;
+                box-shadow: 0 0 5px white;
+                box-shadow: 0 0 10px yellowgreen;
+            }
+        }
+    }
+}
+.footereserva{
+    background-color: black;
+    color: white;
+    div{
+        a{
+            color: white;
+            
+        }
+    }
+}
+.mainnosotros {
+
+    text-align: center;
+    background-color: to bottom (green blue red);
+    .losotros{
+        background-image: url(./galeria/ivanto.jpeg);
+        background-position: center;
+        height: calc(100vh - 120px);
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        img{
+            display: none;
+        }
+        h1{
+            color: white;
+            font-size: 50px;
+            text-shadow: 0 0 15px black;
+            padding-top: 180px;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 10px;
+
+            color: white !important;
+            text-shadow: 0 0 15px white !important;
+            margin: 15px;
+        }
+        // .ivanto{
+        //     background-image: url(./galeria/ivanto.jpeg);
+        //     width: 400px;
+        //     height: 350px;
+        //     background-position: center;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        // }
+    }
+    
+    .informacion{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 50px;
+        border-radius: 50px;
+        h2{
+            font-size: 50px;
+            color: white;
+            text-shadow: 0 0 5px white;
+            padding: 30px;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+            text-shadow: 0 0 5px white;
+        }
+    }
+    }
+// nosotros
+.nosotro{
+    background-image:linear-gradient(to bottom , #954949,#333636,#48281B,#3095B1 ,#242223) ;
+        .headernos{
+                background-color: white;
+        }
+    
+}
+
+// .mainnosotros{
+//     width: 100%;
+//     height:auto;
+//     text-align: center;
+//     @include texto(35,auto,white ,0 0 5px white ,20px );
+//     .losotros{
+//             width: auto;
+//             height: auto;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             margin: 50px;
+//         .ivanto{
+//             background-image: url(./galeria/ivanto.jpeg);
+//             width: 50%;
+//             height: 500px;
+//             background-position: center;
+//             background-size: cover;
+//             align-items: center;
+//             margin: 50px;
+//         }
+//         p{
+//             @include texto(25px,80%,rgb(255, 255, 255) !important,0 0 5px white ,40px);
+//             background-image:linear-gradient(to top , #954949,#333636) ;
+//             border:#242223 3px solid;
+//             border-radius: 30px;
+            
+//         }
+        
+//     }
+//     .informacion{
+        
+//         font-size: 20px;
+//         text-align: center;
+//         width: 100%;
+//         align-items: center;
+//         .info{
+//             border: #242223 3px solid;
+//             border-radius: 30px;
+//             width: 80%;
+//             display: inline-flex;
+//             justify-content: center;
+//             padding: 40px;
+//             margin: 50px;
+//             background-image:linear-gradient(to top ,#3095B1,#242223,#3095B1,);
+//             color: white;
+//             text-shadow: 0 0 5px black;
+//         }
+//     }
+// }
+.footernos{
+    background-color: #24222302;
+}
+//funcional
+$fondocolor4:#aa005e;
+$fondocolor2:#333636;
+$fondocolor3:#954949;
+$fondocolor:violet;
+.fun{
+    text-align: center;
+    
+    @for $in from 1 through 7{
+        .funcional-#{$in} {
+            color: black;
+            height: 300px;
+            background-color: darken($fondocolor, $in*5%);
+            // h#{$in}{
+            //     font-size: 35px;
+            // }
+            //nose si se hace asi el h,creo que esta mal usado
+            //ahora el que capaz esta bien
+            @for $in from 1 through 7{
+                .h#{$in} {
+                    font-size: 30px;
+                    padding-top: 30px;
+                }
+            }
+            p{
+                background-color:$fondocolor4;
+                margin: 35px 100px;
+                font-size: 20px;
+                border-radius: 30px;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.fun {
+    text-shadow: 3px 3px 3px #242223;
+    width: 100%;
+    div{
+        h1,h2,h3,h4,h5,h6{
+            @include texto(40px,auto ,black ,0 0 5px black,20px);
+            text-align: center;
+    
+        }
+        p{
+            color: white;
+        }
+    }
+    .funcional-5 {
+        width: 100% !important;
+        height: auto;
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        
+        @each $material in material1, material2, material3, material4, material5, material6, material7, material8, material9, material10 {
+            .#{$material} {
+                width: 250px !important;
+                height: 250px !important;
+                margin: 20px;
+                background-image: url("./galeria/#{$material}.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+                
+            }
+        }
+    }
+        
+        .h5grid{
+            font-size: 30px;
+            padding-top: 50px;
+        }
+        .material1{
+            animation-name: rebotar;
+            animation-duration: 10s;
+            background-position: center;
+            background-size: cover;
+        }
+        .material3{
+            animation-name: rebotar;
+            animation-duration: 10s;
+            background-position: center;
+            background-size: cover;
+        }
+        @keyframes rebotar {
+            0%{opacity: 0;}
+            10%{transform: translateY(150px);
+            box-shadow: 0px 10px 10px 10px #000;}
+            11%{box-shadow: 0px 10px 10px 10px #000;}
+            20%{opacity: 1;
+            transform:translateY(0px);}
+            30%{opacity: 1;
+            transform: translateY(150px);}
+            31%{box-shadow: 0px 10px 10px 10px #000;}
+            40%{opacity: 1;
+            transform: translateY(0px);
+            box-shadow:none ;}
+            50%{opacity: 1;
+            transform: translateY(150px);
+            box-shadow: 0px 10px 10px 10px #000;}
+            70%{opacity: 1;
+            transform: translateY(150px);
+            box-shadow: 0px 10px 10px 10px #000;}
+            80%{opacity: 1;
+                transform: translateY(50px);
+                box-shadow: none;}
+            90%{opacity: 1;
+            transform: translateY(130px);
+            box-shadow: none;
+            transform: rotate(-280deg);}
+            100%{transform: rotate(-360deg);
+            transform: translate(10px,150px);
+            box-shadow: 0px 10px 10px 10px #000;}
+            }
+    }
+    .funcional-7{
+        h6{
+        color: white;
+        margin: 0px;
+        padding-top: 50px;
+        font-size: 60px;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 5px #000;
+        animation-duration: 10s;
+        animation-name: aparecer;
+        animation-name: rebotar;
+        animation-delay: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;}
+    }
+    @keyframes aparecer{from{opacity: 0;}
+                    to{opacity: 1;}
+}
+}
+
+//cancha
+@mixin fotofoto($w ,$h, $m,$bgp,$bgs,$bgr){
+    width: $w;
+    height: $h;
+    margin: $m;
+    background-position: $bgp;
+    background-size: $bgs;
+    background-repeat: $bgr;
+}
+.maincanchas{
+    background-color: black;
+    h1,h2,h3,h4{
+        @include texto(40px,auto ,green ,0 0 5px green,20px);
+        text-align: center;
+
+    }
+    section{
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        .ftcancha{
+            @include fotofoto(600px,300px ,20px ,center ,cover ,no-repeat);    
+            border-radius: 10px;
+            box-shadow:
+            4px 5px black,
+            6px 7px #333636,
+            10px 11px #242223
+            ;
+        }
+        .cancha1{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha2{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha3{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha4{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha5{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha6{
+            background-image: url(./galeria/cancha1.jpeg);
+        }
+        .cancha8{
+            background-image: url(./galeria/cancha8.jpeg);
+        }
+        .cancha9{
+            background-image: url(./galeria/cancha9.jpeg);
+        }
+        .cancha10{
+            background-image: url(./galeria/cancha10.jpeg);
+        }
+        .cancha11{
+            background-image: url(./galeria/cancha11.jpeg);
+        }
+        .cancha12{
+            background-image: url(./galeria/cancha12.jpeg);
+        }
+        .cancha13{
+            background-image: url(./galeria/cancha13.jpg);
+        }
+        .cancha14{
+            background-image: url(./galeria/cancha14.jpg);
+        }
+        .cancha15{
+            background-image: url(./galeria/cancha15.png);
+        }
+        .cancha16{
+            background-image: url(./galeria/cancha16.jpg);
+        }
+        .cancha17{
+            background-image: url(./galeria/cancha17.jpg);
+        }
+        .cancha18{
+            background-image: url(./galeria/cancha18.jpg);
+        }
+        }
+}
+.footercanchas{
+    background-color: black;
+    .redes{
+        a{
+            color: white;
+        }
+    }
+}
+@media (min-width: 1440px){
+    header{
+        ul{
+            li{
+                
+                padding: 0px 50px;
+            }
+        }
+    }
+}
+
+//@media 1024
+@media (min-width: 1024px) {
+    header{
+        ul{
+            li{
+                
+                padding: 0px 30px;
+            }
+        }
+    }
+    main {
+        .wsps{
+            width: 100%;
+        }
+        .imagenesindex{
+            width: 100%;
+            .lfoto,.rfoto{
+                width: 85%;
+                display: inline-flex;
+                margin-left: 55px;
+                margin-top: 50px;
+                
+            }
+        }
+        .canchas{
+            width: 100%;
+            padding: 0px;
+        }
+    }
+    .footerindex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+//nosotros
+.mainnosotros{
+    .losotros{
+        .ivanto{
+            width: 600px;
+            
+        }
+    }
+}
+.footernos{
+    .redes{
+        
+        a{
+            display: flex;
+            font-family: $fuente-general;
+        }
+        
+    }
+}
+
+//@media min-width 768px
+@media (max-width: 768px) {
+    header{
+        nav{
+            .nave{
+                display: block !important;
+                text-align: center !important;
+                font-size: 20px;
+                a{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    main{
+        .canchas{
+            flex-direction: column;
+            align-items: center;
+            img{
+                padding: none;
+                margin:20px;
+                width: 80vh;
+            }
+        }
+    }
+}
+//reserva
+.reservamain{
+    width: 100%;
+    height: 1200px;
+    .contactos{
+        .contacto{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .form{
+            input{
+                font-size: 20px;
+            }
+        }
+    }
+}
+//canchas
+.maincanchas{
+    h1,h2,h3,h4{
+        font-size: 30px;
+    }
+}
+footer{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    .redes{
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+
+//@media max-width 425
+@media (max-width:425px) {
+    .arriba{
+        display: block !important;
+    }
+    main{
+        .fondomain{
+            .dentromain{
+                width: 300px;
+                border: 5px solid black;
+                h1{
+                    color: black;
+                }
+                p{
+                    color: black;
+                }
+            }
+        }
+        .wsps{
+            display:inline-block;
+            margin: 10px;
+            width: 90%;
+            a{
+            padding: 5px 10px;
+            font-size: 15px;
+            }
+        }
+        .imagenesindex{
+            width: 100%;
+            justify-content: center;
+            img{
+                width: 350px;
+            }
+            .rfoto{
+                margin: 5px;
+                margin-bottom: 10px;
+            }
+            .lfoto{
+                margin:5;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+//nosotros
+.mainnosotros{
+    .losotros{
+        margin: 0px;
+        height: auto;
+        padding: 0px;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 15px;
+        border-radius: 50px;
+        h1{
+            font-size: 30px;
+            padding: 0px;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        p{
+            font-size: 20px;
+            margin: 10px 50px 50px 50px;
+            text-shadow: 0 0 3px white !important;
+        }
+        img{
+            display: inline;
+            width: 80%;
+            margin-top: 20px;
+            padding: 0px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+        }
+    }
+    .informacion{
+        h2{
+            font-size: 30px;
+            padding-bottom: 0px;
+        }
+        p{
+            font-size: 20px;
+            margin: 0px;
+        }
+    }
+}
+.footernos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 40px;
+    }
+    .redes{
+        .red{
+            margin: 20px;
+        }
+    }
+}
+//reservas
+.reservamain{
+    height: 1300px;
+    .contactos{
+        .form{
+            width: 90%;
+
+        }
+    }
+}
+.footereserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 30px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+//canchas
+.maincanchas{
+        h1,h2,h3,h4{
+            font-size: 25px;
+        }
+    section{
+        .cancha7{
+            video{
+                width: auto;
+            }
+        }
+    }
+}
+
+//funcional
+
+.fun{
+    div{
+        width: auto;
+        height: auto !important;
+        padding: 10px;
+    }
+    .funcional-5{
+    div{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+    }
+}
+}
+//@media 375
+@media (max-width:375px) {
+    main{
+        .fondomain{
+            .dentromain{
+                width: 250px;
+                margin: 15px;
+            }
+        }
+        .canchas{
+            justify-content: center;
+            margin: 0px;
+            img{
+                width: 250px;
+                height: auto;
+            }
+        }
+        .wsps{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            a{
+                margin: 10px;
+            }
+        }
+    }
+    footer{
+        .redes{
+            p{
+                font-size: 20px;
+            }
+            a{
+                font-size: 15px;
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100%;
+                margin: 5px;
+            }
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+//nosotros
+
+//reservas
+.reservamain{
+    height: 1300px;
+    
+    .contactos{
+        .contacto{
+            font-size: 20px;
+            p{
+                margin: 5px;
+            }
+        }
+        .form{
+            width: 80%;
+            input{
+                width: 200px;
+            }
+        }
+    }
+}
+//canchas
+.maincanchas{
+    h1,h2,h3,h4{
+        font-size: 25px;
+    }
+}
+
+//funcional
+
+.fun{
+    div{
+        p{
+            margin: 0px !important;
+            
+        }
+    }
+    .funcional-7{
+        padding: 0px;
+        margin: 0px;
+        h6{
+            
+            font-size: 25px;
+        }
+    }
+}
+}
+//@media max-width 320
+@media (max-width:320px) {
+    main{
+        .fondomain{
+            .dentromain{
+                width: 250px;
+                margin: 15px;
+            }
+        }
+        .canchas{
+            justify-content: center;
+            margin: 0px;
+            img{
+                width: 250px;
+                height: auto;
+            }
+        }
+        .wsps{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            a{
+                margin: 10px;
+            }
+        }
+    }
+    footer{
+        .redes{
+            p{
+                font-size: 20px;
+            }
+            a{
+                font-size: 15px;
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100%;
+                margin: 5px;
+            }
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+//nosotros
+
+//reservas
+.reservamain{
+    height: 1300px;
+    
+    .contactos{
+        .contacto{
+            font-size: 20px;
+            p{
+                margin: 5px;
+            }
+        }
+        .form{
+            width: 80%;
+            input{
+                width: 200px;
+            }
+        }
+    }
+}
+//canchas
+.maincanchas{
+    h1,h2,h3,h4{
+        font-size: 25px;
+    }
+}
+
+//funcional
+
+.fun{
+    div{
+        p{
+            margin: 0px !important;
+            
+        }
+    }
+    .funcional-7{
+        padding: 0px;
+        margin: 0px;
+        h6{
+            
+            font-size: 25px;
+        }
+    }
+}
+}
